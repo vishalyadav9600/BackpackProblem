@@ -23,32 +23,8 @@ This project is a Spring Boot application that demonstrates the implementation o
 
 ### Sample Input and Output Explanation
 
-1. **Bag Capacity: 27**
-    - Items packed: 4 Bags of Apples, 2 Bread, 1 Peanut Butter, 1 Trail Mix.
-
-2. **Bag Capacity: 38**
-    - Items packed: 6 Bags of Apples, 1 Bread, 2 Peanut Butter, 1 Trail Mix.
-
-3. **Bag Capacity: 15**
-    - Items packed: 1 Bag of Apples, 2 Bread, 1 Peanut Butter, 2 Trail Mix.
-
-4. **Bag Capacity: 100**
-    - Items packed: 18 Bags of Apples, 2 Bread, 1 Peanut Butter, 2 Trail Mix.
-
-5. **Bag Capacity: 1000**
-    - Items packed: 198 Bags of Apples, 2 Bread, 1 Peanut Butter, 2 Trail Mix.
-
-6. **Bag Capacity: 11**
-    - Items packed: 1 Bag of Apples, 1 Bread, 1 Peanut Butter, 1 Trail Mix.
-
-7. **Bag Capacity: 12**
-    - Items packed: 1 Bag of Apples, 2 Bread, 1 Peanut Butter, 1 Trail Mix.
-
-8. **Bag Capacity: 14**
-    - Items packed: 1 Bag of Apples, 1 Bread, 1 Peanut Butter, 2 Trail Mix.
-
-9. **Bag Capacity: 10,000**
-    - Items packed: 1998 Bags of Apples, 2 Bread, 1 Peanut Butter, 2 Trail Mix.
-
-10. **Bag Capacity: 5**
-    - **Error**: Capacity too small to fit one of each item.
+Tested multiple bag capacities to make sure the packing logic works for all kinds of cases.
+For normal capacities like 27, 38, and 15, I checked if the output matches the expected number of items.
+For larger capacities such as 100, 1000, and 10,000, I wanted to see if the program can handle big numbers without any issues.
+For edge values like 11, 12, and 14, I tested how the logic behaves when the bag capacity is just around the minimum needed.
+Lastly, I used 5 as an invalid case to confirm that the code properly handles situations where not even one of each item can fit.
